@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python Websockets Chat Demo</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/css/application.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Prova 2 - Redes de Computadores</h1>
+        <hr />
+        <p>Este é um chat desenvolvido para a disciplina de Redes de Computadores, ministrada no primeiro semestre de 2016, pelo professor Édson Moreira. Para o desenvolvimento deste, utilizamos como modelo o seguinte repositório: <a href="https://github.com/heroku-examples/python-websockets-chat"></a>. </p>
+        <p>O chat tem como objetivo unir pessoas através de um tópico comum para que possam comunicar-se através de uma aplicação Web.</p>
+      </div>
+      <form id="input-form" class="form-inline">
+        <div class="form-group">
+          <input id="input-handle" type="text" class="form-control" placeholder="Tópico" autofocus />
+        </div>
+        <br>
+        <div class="form-group">
+          <input id="input-text" type="text" class="form-control" placeholder="Sua mensagem" autofocus />
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+      <div class="page-header">
+        <h1>Histórico</h1>
+      </div>
+      <div id="chat-text">
+      </div>
+    </div>
+
+  
+
+    <script type="text/javascript" src="static/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="static/js/reconnecting-websocket.min.js"></script>
+    <script type="text/javascript" src="static/js/application.js"></script>
+  </body>
+</html>
